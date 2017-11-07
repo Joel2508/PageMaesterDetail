@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PageMaesterDetail.View.MainView"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"             
+             BackgroundColor="{StaticResource BackgroundColor}">
+    <StackLayout
+        Spacing="16"
+        Padding="30"
+        BindingContext="{Binding Home}"
+        VerticalOptions="Start"
+        HorizontalOptions="Fill">
+        <Label
+            TextColor="Black"
+            FontSize="Large"
+            Text="{Binding Title, Mode=TwoWay}">
+        </Label>
+        <Label
+            TextColor="Black"
+            FontSize="Small"
+            Text="{Binding Autor, Mode=TwoWay}">
+        </Label>
+        <Label            
+            TextColor="Black"
+            FontSize="Medium"
+            Text="{Binding Description, Mode=TwoWay}">
+        </Label>
+    </StackLayout>
+</ContentPage>

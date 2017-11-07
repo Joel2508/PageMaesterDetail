@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PageMaesterDetail.View.AndroidForView"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="Android for .NET">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="End"
+            Spacing="16"
+            Padding="8"
+            BindingContext="{Binding AndroidFor}">
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                TextColor="White"
+                Text="{Binding Title, Mode=TwoWay}">
+                
+            </Label>
+            <Label
+                FontAttributes="Bold"
+                FontSize="Default"
+                TextColor="Blue"
+                Text="{Binding Author, Mode=TwoWay}">
+
+            </Label>
+            <Label
+                FontAttributes="Bold"
+                FontSize="Medium"
+                TextColor="Black"
+                Text="{Binding Description, Mode=TwoWay}">
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

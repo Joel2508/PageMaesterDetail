@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:infra="clr-namespace:PageMaesterDetail.Infrasctructure"
+             x:Class="PageMaesterDetail.App">
+	<Application.Resources>
+
+		<!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <!--Locator-->
+            <infra:InstanceLocator x:Key="Locator"/>
+            
+            <!--Color-->
+            <Color x:Key="MainColor">#071930</Color>
+            <Color x:Key="FontColor">#52656b</Color>
+            <Color x:Key="AccentColor1">#cdff00</Color>
+            <Color x:Key="AccentColor2">#b8b89f</Color>
+            <Color x:Key="BackgroundColor">#023852</Color>
+            
+            <!-- Menu colors -->
+            <Color x:Key="MenuColor">#f5f5f5</Color>
+            <Color x:Key="MenuFontColor">#038BD8</Color>
+
+        </ResourceDictionary>
+	</Application.Resources>
+</Application>
