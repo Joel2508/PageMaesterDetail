@@ -4,7 +4,7 @@
              x:Class="PageMaesterDetail.View.FollowingView"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              BackgroundColor="{StaticResource BackgroundColor}"
-             Title="Follwing">
+             Title="Following view">
     <StackLayout
         Margin="0, 16"
         Spacing="16">
