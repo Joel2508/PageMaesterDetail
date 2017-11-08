@@ -45,6 +45,15 @@
                     mainViewModel.AndroidFor = new AndroidForViewModel();
                     await navigationService.Navigation(View);
                     break;
+                case "TabbeView":
+                    mainViewModel.Tabbe = new TabbeViewModel();
+                    await navigationService.Navigation(View);
+                    break;
+                case "CarouselView":
+                    mainViewModel.Carousel = new CarouselViewModel();
+                    await navigationService.Navigation(View);
+                    break;
+
             }
         }
     }

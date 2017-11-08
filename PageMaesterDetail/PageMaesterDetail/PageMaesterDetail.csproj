@@ -42,13 +42,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\NavigationService.cs" />
     <Compile Include="ViewModel\AndroidForViewModel.cs" />
+    <Compile Include="ViewModel\CarouselViewModel.cs" />
     <Compile Include="ViewModel\FollowingViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\MenuItemViewModel.cs" />
+    <Compile Include="ViewModel\TabbeViewModel.cs" />
     <Compile Include="ViewModel\Xamarinpart2ViewModel.cs" />
     <Compile Include="View\AndroidForView.xaml.cs">
       <DependentUpon>AndroidForView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CarouselView.xaml.cs">
+      <DependentUpon>CarouselView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\FollowingView.xaml.cs">
       <DependentUpon>FollowingView.xaml</DependentUpon>
@@ -64,6 +69,18 @@
     </Compile>
     <Compile Include="View\MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tabbed1View.xaml.cs">
+      <DependentUpon>Tabbed1View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tabbed2View.xaml.cs">
+      <DependentUpon>Tabbed2View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TabbedsView.xaml.cs">
+      <DependentUpon>TabbedsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TabbeView.xaml.cs">
+      <DependentUpon>TabbeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Xamarinpart2View.xaml.cs">
       <DependentUpon>Xamarinpart2View.xaml</DependentUpon>
@@ -136,6 +153,36 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\AndroidForView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\TabbeView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\TabbedsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Tabbed1View.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Tabbed2View.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\CarouselView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

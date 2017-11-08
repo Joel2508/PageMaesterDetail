@@ -16,7 +16,9 @@ namespace PageMaesterDetail.ViewModel
         {
             Author = "Joel Arias";
             Title = "Building Cross Platform App Xamarin part 2";
-            Description = "";
+            Description = "Learn how to use Xamarin to leverage your" +
+                      "skillis in Microsoft Visual Studio and C# to build cross" +
+                      "-platform apps that run on both android and IOS.";
         }
 
      

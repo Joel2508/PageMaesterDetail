@@ -22,6 +22,12 @@
                 case "AndroidForView":
                     await App.Navigator.PushAsync(new AndroidForView());
                     break;
+                case "TabbeView":
+                    await App.Navigator.PushAsync(new TabbeView());
+                    break;
+                case "CarouselView":
+                    await App.Navigator.PushAsync(new CarouselView());
+                    break;
             }
         }
         #endregion

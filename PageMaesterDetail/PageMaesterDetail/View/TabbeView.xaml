@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Local="clr-namespace:PageMaesterDetail.View"
+             x:Class="PageMaesterDetail.View.TabbeView"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Tabbed Page"
+             BackgroundColor="{StaticResource BackgroundColor}">
+
+    <ContentPage Icon="ic_autorenew.png">
+        <ContentPage.Content>
+            <StackLayout
+                Spacing="16"
+                Padding="30"
+                BindingContext="{Binding Tabbe}">
+                <Label
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Text="{Binding Title, Mode=TwoWay}">
+                </Label>
+                <Label
+                    FontSize="Small"
+                    FontAttributes="Bold"
+                    TextColor="Blue"
+                    Text="{Binding Autor, Mode=TwoWay}">
+                </Label>
+                <Label
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    TextColor="Black"
+                    Text="{Binding Description, Mode=TwoWay}">
+                </Label>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <Local:TabbedsView>
+    </Local:TabbedsView>
+    <Local:Tabbed1View>
+    </Local:Tabbed1View>
+    <Local:Tabbed2View>
+    </Local:Tabbed2View>
+</TabbedPage>

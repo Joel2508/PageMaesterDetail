@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:PageMaesterDetail.View"
+             x:Class="PageMaesterDetail.View.CarouselView"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="Carousel">
+
+    <ContentPage>
+        <ContentPage.Content>
+            <StackLayout
+                BindingContext="{Binding Carousel}">
+                <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <view:AndroidForView>
+    </view:AndroidForView>
+    <view:FollowingView>
+    </view:FollowingView>
+    <view:Xamarinpart2View>
+    </view:Xamarinpart2View>
+    <view:MainView>
+    </view:MainView>
+    <view:Tabbed1View>
+    </view:Tabbed1View>
+    <view:Tabbed2View>
+    </view:Tabbed2View>
+</CarouselPage>
